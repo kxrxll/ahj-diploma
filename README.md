@@ -1,7 +1,9 @@
 # Advanced JS in browser diploma by kxrxll [![Build status](https://ci.appveyor.com/api/projects/status/6s7celu26vna42y5?svg=true)](https://ci.appveyor.com/project/kxrxll/ahj-ws)
 
 Pages link: https://kxrxll.github.io/ahj-diploma/
+
 Server link: 
+
 Figma prototype: https://www.figma.com/file/eNRWEnVsccqiKnCDwCrsrg/ahj-diploma?node-id=0%3A1
 
 List of features included:
