@@ -1,6 +1,8 @@
 # Advanced JS in browser diploma by kxrxll [![Build status](https://ci.appveyor.com/api/projects/status/6s7celu26vna42y5?svg=true)](https://ci.appveyor.com/project/kxrxll/ahj-ws)
 
-Pages link: https://kxrxll.github.io/ahj-ws/
+Pages link: https://kxrxll.github.io/ahj-diploma/
+Server link: 
+Figma prototype: https://www.figma.com/file/eNRWEnVsccqiKnCDwCrsrg/ahj-diploma?node-id=0%3A1
 
 List of features included:
 
@@ -14,6 +16,6 @@ List of features included:
 ## Additional
 * Синхронизация - если приложение открыто в нескольких окнах (вкладках), то контент должен быть синхронизирован
 * Поиск по сообщениям (интерфейс + реализация на сервере)
+* Отправка геолокации
 * Добавление сообщения в избранное (тогда должен быть интерфейс для просмотра избранного)
-* Работа в оффлайн-режиме (при это загруженные сообщения должны кэшироваться и быть доступными после обновления страницы)
 * Поддержка смайликов (emoji)
