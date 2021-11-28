@@ -2,7 +2,7 @@
 
 Pages link: https://kxrxll.github.io/ahj-diploma/
 
-Server link: 
+Server link: https://diploma-kxrxll.herokuapp.com/
 
 Figma prototype: https://www.figma.com/file/eNRWEnVsccqiKnCDwCrsrg/ahj-diploma?node-id=0%3A1
 

@@ -12,7 +12,7 @@ export default class USA3000 {
     this.field = this.el.querySelector('.messages');
     this.favorite = this.el.querySelector('.favoritesField');
     this.search = this.el.querySelector('.searchResult');
-    this.ws = new WebSocket('ws://localhost:7070/ws');
+    this.ws = new WebSocket('wss:https://diploma-kxrxll.herokuapp.com/');
   }
 
   init() {
@@ -92,7 +92,7 @@ export default class USA3000 {
         isFavorite: false,
       };
     }
-    const api = new API('http://localhost:7070/favorite');
+    const api = new API('https://diploma-kxrxll.herokuapp.com/favorite');
     const response = await api.send(message);
     if (response.status === 200 && response.ok) {
       this.textInput.value = '';
@@ -121,7 +121,7 @@ export default class USA3000 {
         message: this.textInput.value,
       };
     }
-    const api = new API('http://localhost:7070/newmessage');
+    const api = new API('https://diploma-kxrxll.herokuapp.com/newmessage');
     const response = await api.send(message);
     if (response.status === 200 && response.ok) {
       this.textInput.value = '';
@@ -136,7 +136,7 @@ export default class USA3000 {
     const file = this.attachForm.querySelector('input').files[0];
     const data = new FormData();
     data.append('file', file);
-    const api = new API('http://localhost:7070/download');
+    const api = new API('https://diploma-kxrxll.herokuapp.com/download');
     const response = await api.put(data);
     if (response.status === 200 && response.ok) {
       await console.log(response);
@@ -176,7 +176,7 @@ export default class USA3000 {
       message: geo,
       favorite: false,
     };
-    const api = new API('http://localhost:7070/newmessage');
+    const api = new API('https://diploma-kxrxll.herokuapp.com/newmessage');
     const response = await api.send(message);
     if (response.status === 200 && response.ok) {
       this.textInput.value = '';
@@ -192,7 +192,7 @@ export default class USA3000 {
     const message = {
       str: this.searchInput.value,
     };
-    const api = new API('http://localhost:7070/search');
+    const api = new API('https://diploma-kxrxll.herokuapp.com/search');
     const response = await api.send(message);
     if (response.status === 200 && response.ok) {
       const parsedResponse = await response.json();
