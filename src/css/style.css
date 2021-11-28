@@ -1,156 +1,213 @@
 body {
-  font-family: "Gill Sans", sans-serif;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  background-color: #333333;
 }
 
-.popup {
-  width: 300px;
-  height: 100px;
-  margin-left: calc(50% - 150px);
-  margin-top: 200px;
-  border: 1px solid silver;
-  border-radius: 10px;
-}
-
-.popupform {
-  padding: 10px;
+.usa3000 {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
-.authlabel {
-  margin-bottom: 10px;
+.main {
+  width: 600px;
+  height: 600px;
+  background-color: #C4C4C4;
+  border: 3px solid #000000;
 }
 
-.authname {
-  height: 20px;
-  padding-left: 10px;
-  margin-bottom: 10px;
-  border: 1px solid silver;
-  border-radius: 10px;
-  font-size: large;
-  font-family: inherit;
-}
-
-.authname:focus {
-  outline: none;
-  border: 2px solid goldenrod;
-}
-
-.authsubmit {
-  height: 20px;
-  margin-bottom: 10px;
-  border: 1px solid silver;
-  border-radius: 10px;
-  font-family: inherit;
-}
-
-.chat {
-  display: flex;
-  min-height: 600px;
-}
-
-.users {
-  width: 200px;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  border: 1px solid silver;
-  border-radius: 10px 0 0 10px;
-  border-right: none;
-}
-
-.user {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  padding-left: 10px;
-  border-bottom: 1px solid silver;
-}
-
-.selected {
-  background-color: lavender;
-}
-
-.start {
-  font-size: 24px;
-  margin-left: 20px;
-}
-
-.you {
-  cursor: default;
-  color: brown;
-}
-
-.userpic {
-  width: 30px;
-  height: 30px;
-  background-color: gainsboro;
-  border: 1px solid silver;
-  border-radius: 15px;
-}
-
-.username {
+.label {
+  color: #FFFFFF;
   margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.chatwindow {
+.messages {
+  width: 580px;
+  height: 500px;
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+  margin-left: 10px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.controls {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 500px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.textInput {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  width: 385px;
+  height: 36px;
+  padding: 0;
   padding-left: 10px;
-  border: 1px solid silver;
-  border-radius: 10px;
 }
 
-.chatfield {
-  display: flex;
-  flex-direction: column;
-  overflow-y: scroll;
+.sendButton {
+  cursor: pointer;
+  font-size: 14px;
+  width: 50px;
+  height: 40px;
+  background-color: #ADF8D8;
+}
+
+.attachButton {
+  width: 70px;
+}
+
+.attachButton::before {
+  position: absolute;
+  content: 'Attach';
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+  width: 70px;
+  height: 40px;
+  background-color: #ADF8D8;
+  box-sizing: border-box;
+  border: 2px solid black;
+}
+
+.file {
+  height: 40px;
+  position: relative;
+}
+
+.geoButton {
+  cursor: pointer;
+  font-size: 14px;
+  width: 50px;
+  height: 40px;
+  background-color: #95EBFE;
+  margin-right: 5px;
+}
+
+.tools {
+  width: 200px;
+  height: 600px;
+  background-color: #C4C4C4;
+  border: 3px solid #000000;
+}
+
+.searchInput {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  width: 176px;
+  height: 36px;
+  padding: 0;
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.searchButton {
+  cursor: pointer;
+  font-size: 14px;
+  width: 190px;
+  height: 40px;
+  background-color: #ADF8D8;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.searchResult {
+  width: 188px;
+  height: 140px;
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+  margin-left: 5px;
+  margin-top: 10px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.favoritesLabel {
+  color: #FFFFFF;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.favoritesField {
+  width: 188px;
+  height: 300px;
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+  margin-left: 5px;
+  margin-top: 10px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.result {
+  width: 140px;
+  height: 20px;
+  border: 1px solid #000000;
+  margin: 10px;
+  padding: 10px;
+}
+
+.favorite {
+  width: 140px;
+  height: 20px;
+  border: 1px solid #000000;
+  margin: 10px;
+  padding: 10px;
 }
 
 .message {
-  margin-top: 10px;
-  border: 1px solid silver;
-  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 480px;
+  height: 80px;
+  border: 1px solid #000000;
+  margin: 10px;
   padding-left: 10px;
-  width: 300px;
 }
 
-.incomingmessage {
-  margin-left: 180px;
+.favoriteButtonOff {
+  cursor: pointer;
+  font-size: 14px;
+  width: 50px;
+  height: 40px;
+  background-color: #C4C4C4;
+  color: #FFFFFF;
+  margin-left: 5px;
+  margin-left: auto;
+  margin-right: 5px;
 }
 
-.messagename {
-  color: grey;
+.favoriteButtonOn {
+  cursor: pointer;
+  font-size: 14px;
+  width: 50px;
+  height: 40px;
+  background-color: #ADF8D8;
+  margin-left: 5px;
+  margin-left: auto;
+  margin-right: 5px;
 }
 
-.messagedate {
-  color: blueviolet;
-  font-size: smaller;
+.image {
+  width: 240px;
+  height: 60px;
+  object-fit: cover;
 }
 
-.messagetext {
-  font-weight: bold;
-}
-
-.newmessage {
-  font-size: large;
-  font-family: inherit;
-  width: 470px;
-  height: 20px;
-  padding: 5px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  border: 1px solid silver;
-  border-radius: 10px;
-}
-
-.newmessage:focus {
-  outline: none;
-  border: 2px solid goldenrod;
-}
-
-.hide {
-  display: none;
+.downloadButton {
+  cursor: pointer;
+  font-size: 14px;
+  width: 100px;
+  height: 40px;
+  background-color: #95EBFE;
+  margin-left: 70px;
 }

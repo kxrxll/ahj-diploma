@@ -7,29 +7,47 @@
   <title>Document</title>
 </head>
 <body>
-  <section class="auth">
-    <div class="popup">
-    <form class="popupform">
-      <label for="name" class="authlabel">Enter your name</label>
-      <input name='name' type="text" class="authname" required>
-      <button class="authsubmit">Continiue</button>
-    </form>
-    </div>
-  </section>
-  <section class="chat hide">
-    <div class="users">
-      <div class="user you">
-        <div class="userpic"></div>
-        <p class="username">You</p>
+  <section class="usa3000">
+    <div class="main">
+      <p class="label">Ultimate storage application 3000</p>
+      <div class="messages">
+        <div class="message">
+          <p class="text">Text message</p>
+          <button class="favoriteButtonOff"><3</button>
+        </div>
+        <div class="message">
+          <a class="anchor" href='#'>Some link</a>
+          <button class="favoriteButtonOff"><3</button>
+        </div>
+        <div class="message">
+          <img class="image" src='https://upload.wikimedia.org/wikipedia/ru/1/1b/Simpsons.png'>
+          <button class="downloadButton" type="file">Download</button>
+          <button class="favoriteButtonOn"><3</button>
+        </div>
+      </div>
+      <div class="controls">
+        <form class="send">
+          <input type="text" class="textInput" placeholder="Type here to send..." required>
+          <button class="sendButton">Send</button>
+          <button class="geoButton">Geo</button>
+        </form>
+        <form class="file">
+          <input class="attachButton" type="file">
+        </form>
       </div>
     </div>
-    <div class="chatwindow">
-      <div class="chatfield">
-        <p class="start">Click any person to start chating!</p>
-      </div>
-      <form>
-        <input type="text" placeholder="Type your message here" class='newmessage' disabled>
+    <div class="tools">
+      <form class="search">
+        <input type="text" class="searchInput" placeholder="Type here to search..." required>
+        <button class="searchButton">Search</button>
       </form>
+      <div class="searchResult">
+        <div class="result">Search result</div>
+      </div>
+      <p class="favoritesLabel">Favorites</p>
+      <div class="favoritesField">
+        <div class="favorite">Favorite item</div>
+      </div>
     </div>
   </section>
 </body>

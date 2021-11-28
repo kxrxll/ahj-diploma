@@ -1,4 +1,4 @@
-import Login from './Login';
+import USA3000 from './USA3000';
 
-const authForm = new Login(document.querySelector('.auth'));
-authForm.init();
+const newStorage = new USA3000(document.querySelector('.usa3000'));
+newStorage.init();

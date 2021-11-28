@@ -15,4 +15,11 @@ export default class API {
       headers: this.contentTypeHeader,
     });
   }
+
+  put(formData) {
+    return fetch(this.url, {
+      body: formData,
+      method: 'PUT',
+    });
+  }
 }
