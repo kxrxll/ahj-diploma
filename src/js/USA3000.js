@@ -12,7 +12,7 @@ export default class USA3000 {
     this.field = this.el.querySelector('.messages');
     this.favorite = this.el.querySelector('.favoritesField');
     this.search = this.el.querySelector('.searchResult');
-    this.ws = new WebSocket('wss:https://diploma-kxrxll.herokuapp.com/');
+    this.ws = new WebSocket('wss://diploma-kxrxll.herokuapp.com/');
   }
 
   init() {

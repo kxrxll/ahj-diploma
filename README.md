@@ -1,4 +1,4 @@
-# Advanced JS in browser diploma by kxrxll [![Build status](https://ci.appveyor.com/api/projects/status/6s7celu26vna42y5?svg=true)](https://ci.appveyor.com/project/kxrxll/ahj-ws)
+# Advanced JS in browser diploma by kxrxll [![Build status](https://ci.appveyor.com/api/projects/status/uojm0sbbbtctj6ex?svg=true)](https://ci.appveyor.com/project/kxrxll/ahj-diploma)
 
 Pages link: https://kxrxll.github.io/ahj-diploma/
 
